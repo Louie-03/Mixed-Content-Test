@@ -7,6 +7,23 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-family: Noto Sans KR;
     font-size: 10px;
+    background-color: ${({ theme: { colors } }) => colors.background};
+  }
+
+  textarea {
+    font-family: Noto Sans KR;
+  }
+
+  input {
+    font-family: Noto Sans KR;
+  }
+
+  textarea {
+    font-family: Noto Sans KR;
+  }
+
+  input {
+    font-family: Noto Sans KR;
   }
 
   a {
@@ -17,6 +34,10 @@ const GlobalStyles = createGlobalStyle`
       box-sizing:border-box;
       outline:none;
       border:none;
+  }
+
+  button {
+    background-color: transparent;
   }
 `;
 

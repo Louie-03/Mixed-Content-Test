@@ -1,22 +1,22 @@
-import React from 'react';
-
 import { GitHubBtn } from './Login.styled';
 import * as S from './Login.styled';
 
-function Login(): JSX.Element {
+const URI = 'http://15.164.251.234/login';
+
+export function Login() {
   return (
     <S.Container>
       <S.Wrapper>
         <S.Logo>
-          <S.LogoImg alt="logo" src="./LogotypeLarge.svg" />
+          <S.LogoImg alt="logo" src="./imgs/LogotypeLarge.svg" />
         </S.Logo>
-        <GitHubBtn to="/" size="lg">
+        <GitHubBtn href={URI} size="lg">
           GitHub 계정으로 로그인
         </GitHubBtn>
         <S.OR
           fontWeight="bold"
           fontSize="sm"
-          lineheight="short"
+          lineHeight="short"
           color="placeholder"
         >
           OR
@@ -30,7 +30,7 @@ function Login(): JSX.Element {
           to="/"
           fontWeight="bold"
           fontSize="xs"
-          lineheight="shorter"
+          lineHeight="shorter"
           color="body"
         >
           회원가입
@@ -39,4 +39,3 @@ function Login(): JSX.Element {
     </S.Container>
   );
 }
-export default Login;
