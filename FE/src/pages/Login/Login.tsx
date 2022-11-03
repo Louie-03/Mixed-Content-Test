@@ -1,7 +1,7 @@
 import { GitHubBtn } from './Login.styled';
 import * as S from './Login.styled';
 
-const URI = 'http://15.164.251.234/login';
+const URI = 'http://15.164.163.219:8080/login';
 
 export function Login() {
   return (

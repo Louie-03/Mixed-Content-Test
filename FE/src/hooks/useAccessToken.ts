@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const URI = 'http://15.164.251.234/reissue/access-token';
+const URI = 'http://15.164.163.219:8080/reissue/access-token';
 
 export function useAccessToken() {
   const [isTrigger, setIsTrigger] = useState(false);

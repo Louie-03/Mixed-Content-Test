@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const URI = 'http://15.164.251.234/login/callback';
+const URI = 'http://15.164.163.219:8080/login/callback';
 
 function Callback() {
   const [isLoading, setIsLoading] = useState(false);
